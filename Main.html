@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="todo-container">
+    <div class="todo-header">
+      <h1>My To-Do List</h1>
+    </div>
+    <div class="todo-input-container">
+      <input type="text" id="todo-input" class="todo-input" placeholder="What needs to be done?">
+      <select id="category" class="todo-category">
+        <option value="Work">Work</option>
+        <option value="Personal">Personal</option>
+        <option value="Shopping">Shopping</option>
+      </select>
+      <select id="priority" class="todo-priority">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <input type="date" id="due-date" class="todo-date">
+      <button id="add-btn" class="todo-add-btn">Add Task</button>
+    </div>
+    <div class="todo-filters">
+      <input type="text" id="search-bar" placeholder="Search tasks">
+      <select id="sort-tasks">
+        <option value="priority">Sort by Priority</option>
+        <option value="due-date">Sort by Due Date</option>
+      </select>
+    </div>
+    <ul id="todo-list" class="todo-list"></ul>
+    <button id="clear-btn" class="todo-clear-btn">Clear All</button>
+    <div class="task-counter" id="task-counter">Total Tasks: 0</div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

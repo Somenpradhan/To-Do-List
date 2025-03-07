@@ -1,0 +1,86 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #030818;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .todo-container {
+    background: #b390e1;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    padding: 25px;
+    text-align: center;
+  }
+  
+  .todo-header h1 {
+    font-size: 28px;
+    color: #333;
+  }
+  
+  /* Input Container */
+  .todo-input-container,
+  .todo-filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .todo-filters input,
+  .todo-filters select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #5c89d6ac;
+    flex-grow: 1;
+  }
+  
+  /* Button Styles */
+  .todo-add-btn {
+    background: linear-gradient(135deg, #4f2697, #a5152d);
+    color: white;
+    border: none;
+    padding: 7px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .todo-add-btn:hover {
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(118, 75, 162, 0.8);
+  }
+  
+  .todo-clear-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Task Item Styles */
+  .todo-item span.due-date {
+    font-size: 0.9rem;
+    color: #0f1d38;
+    margin-left: 10px;
+  }
+  
+  .todo-item .priority {
+    text-transform: uppercase;
+  }
+  
